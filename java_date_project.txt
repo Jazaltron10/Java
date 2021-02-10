@@ -1,0 +1,233 @@
+public class Date_Project {
+    
+//This is just some C++ Code to be refactored 
+#ifndef HEADER_H
+#define HEADER_H
+#include <iostream>
+#include <string>
+#include <chrono>
+
+using namespace std;
+
+class DateClass
+{
+private:
+	int month, day;
+
+
+
+public:
+	DateClass() {
+		month = 1, day = 1;
+	}
+	void  GetDate();
+	void WriteDate();
+	bool validate();
+};
+
+#endif
+#include <iostream>
+#include <string>
+#include <chrono>
+#include "header.h"
+
+void DateClass::GetDate()
+{
+	int d; int m;
+	cout << "enter your day value in integer format\n";
+	cin >> d;
+	cout << "enter your month value in integer format\n";
+	cin >> m;
+	month = m;
+	day = d;
+}
+
+void DateClass::WriteDate()
+{
+	if (month == 1)
+	{
+		cout << "january " << day << endl;
+	}
+	else if (month == 2)
+	{
+		cout << "february " << day << endl;
+	}
+
+	else if (month == 3)
+	{
+		cout << "march " << day << endl;
+	}
+
+	else if (month == 4)
+	{
+		cout << "april " << day << endl;
+	}
+
+	else if (month == 5)
+	{
+		cout << "may " << day << endl;
+	}
+
+	else if (month == 6)
+	{
+		cout << "june " << day << endl;
+	}
+
+	else if (month == 7)
+	{
+		cout << "july " << day << endl;
+	}
+
+	else if (month == 8)
+	{
+		cout << "august " << day << endl;
+	}
+
+	else if (month == 9)
+	{
+		cout << "september " << day << endl;
+	}
+
+	else if (month == 10)
+	{
+		cout << "october " << day << endl;
+	}
+
+	else if (month == 11)
+	{
+		cout << "november " << day << endl;
+	}
+	else
+	{
+		cout << "december " << day << endl;
+	}
+
+
+}
+bool DateClass::validate()
+{
+
+	bool ok;
+	if ((day >= 1 && day <= 28 && month == 2)
+		|| (day >= 1 && day <= 30 && (month == 9 || month == 4 || 
+			month == 6 || month == 11)) 
+		|| (day >= 1 && day <= 31 && (month == 1 || month == 3 || 
+			month == 5 || month == 7 || 
+			month == 8 || month == 10 || month == 12)))
+	{
+		ok = true;
+		return ok;
+	}
+	else {
+		ok = false;
+		return ok;
+	}
+}
+
+
+#include <iostream>
+#include <string>
+#include "header.h"
+
+
+
+
+int main()
+{
+
+    char answer = 'y';
+	while(answer =='y'|| answer =='Y') {
+
+	DateClass Date1, Date2;
+	bool ok, uk;
+	cout << "please first person should enter his/her details\n";
+	Date1.GetDate();
+	cout << "please second person should enter his/her details\n";
+	Date2.GetDate();
+	ok = Date1.validate();
+	uk = Date2.validate();
+	if (ok == true && uk == true)
+	{
+		cout << "first person date is\n";
+		Date1.WriteDate();
+		cout << "second person date is\n";
+		Date2.WriteDate();
+	}
+
+	else if (ok == true && uk == false)
+	{
+		cout << "first person date is\n";
+		Date1.WriteDate();
+		cout << "second person date is invalid" << endl;
+
+	}
+	else if (ok == false && uk == true)
+	{
+		cout << "first person date is invalid" << endl;
+		cout << "second person date is\n";
+		Date2.WriteDate();
+
+	}
+	else
+	{
+		cout << "invalid date for both persons" << endl;
+	}
+
+    cout << "do you want to continue" << endl;
+
+    cin >> answer;
+}
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+System.out.println("Do You Want To Continue: Yes or No "); 
+Scanner input = new Scanner(System.in);
+String answer = "yes";
+answer = input.nextLine();
+
+do{
+System.out.println("Hello_2 world");
+//scaner();
+//forloops();
+//nestedifs();
+//Range();
+//logicals();   
+//Arrays();
+PhoneBills();
+   
+}
+while( answer == "yes" || answer == "Yes");
+String answer = "yes";
+    Scanner input = new Scanner(System.in);
+    do{
+    System.out.println("Hello_2 world");
+	//scaner();
+    //forloops();
+    //nestedifs();
+    //Range();
+    //logicals();   
+    //Arrays();
+    PhoneBills();
+    System.out.println("Do You Want To Continue: Yes or No ");   
+    answer = input.nextLine();  
+    input.close();  
+    }   
+    while( answer == "yes" || answer == "Yes");
+   
