@@ -1,4 +1,4 @@
-//import java.util.Scanner; 
+import java.util.Scanner; 
 
 public class OOP {
     
@@ -25,9 +25,15 @@ public class OOP {
 
     }
     
+
+    static void printarea( width.nextInt() , height.nextInt()){
+         width.nextInt() * height.nextInt() ;
+    }
     public static void main(String [] args) {
         //System.out.println("Hello OOP");
         OOP x = new OOP();
+        
+       /* 
         Myclass level1 = x.new Myclass();
         level1.sayHello("David");
         level1.sayHello("Amy");
@@ -38,6 +44,16 @@ public class OOP {
         int res = Max(85,45);
         System.out.println("\nTherefore the greater number is:-> "+ res);
     
+        int area = printarea(2, 5);
+        System.out.println("\nThe Area of the rectangle is:-> "+ area);
+*/
+
+        Scanner read = new Scanner(System.in);
+        int width = read.nextInt();
+        int height = read.nextInt();
+        int printarea(width, height);
+
+        S.close();
     }
 
     //}
