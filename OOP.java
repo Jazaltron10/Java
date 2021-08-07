@@ -33,20 +33,18 @@
 //         //System.out.println("Hello OOP");
 //         OOP x = new OOP();
         
-//         /* 
-//         Myclass level1 = x.new Myclass();
-//         level1.sayHello("David");
-//         level1.sayHello("Amy");
-        
-//         int xo = sum_return(2,5);
-//         System.out.println(xo);
-        
-//         int res = Max(85,45);
-//         System.out.println("\nTherefore the greater number is:-> "+ res);
-    
-//         int area = printarea(2, 5);
-//         System.out.println("\nThe Area of the rectangle is:-> "+ area);
-// */
+//         
+/* 
+    Myclass level1 = x.new Myclass();
+    level1.sayHello("David");
+    level1.sayHello("Amy");      
+    int xo = sum_return(2,5);
+    System.out.println(xo);      
+    int res = Max(85,45);
+    System.out.println("\nTherefore the greater number is:-> "+ res);  
+    int area = printarea(2, 5);
+    System.out.println("\nThe Area of the rectangle is:-> "+ area);
+ */
 
 //         Scanner read = new Scanner(System.in);
 //         int width = read.nextInt();
